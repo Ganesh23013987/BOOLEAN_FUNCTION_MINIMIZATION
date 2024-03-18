@@ -32,19 +32,39 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+```
+module booleanfunction_top(a,b,c,d,w,x,y,z,f1,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u;
+not(adash,a);
+not(bdash,b);
+not(cdash,c);
+not(ddash,d);
+not(ydash,y);
+and(p,bdash,ddash);
+and(q,adash,b,d);
+and(r,a,b,cdash);
+or(f1,p,q,r);
+//type code for f2 as like f1
+endmodule
+```
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+Developed by: GANESH.D
+RegisterNumber: 212223240035
 
 
 **RTL realization**
+<img width="332" alt="boolean_function input" src="https://github.com/Ganesh23013987/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473768/67c26373-80ba-43fc-b477-7898e1650f48">
 
-**Output:**
-
-**RTL**
+**TRUTH TABLE:**
+![image](https://github.com/Ganesh23013987/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473768/4c324af5-5752-441e-985c-e0d313854e06)
 
 **Timing Diagram**
+![boolean_function](https://github.com/Ganesh23013987/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473768/6e544e34-68ab-4a25-8161-279bb56bed5a)
+
 
 **Result:**
 
