@@ -36,7 +36,7 @@ Hardware – PCs, Cyclone II , USB flasher
 module boolean_function(a,b,c,d,w,x,y,z,f1,f2);
 input a,b,c,d,w,x,y,z;
 output f1,f2;
-wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u;
+wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u,v,w1,w2,x1,x2,y1,y2,z1,z2;
 not(adash,a);
 not(bdash,b);
 not(cdash,c);
@@ -46,7 +46,10 @@ and(p,bdash,ddash);
 and(q,adash,b,d);
 and(r,a,b,cdash);
 or(f1,p,q,r);
-//type code for f2 as like f1
+
+and(w1,a,b,c);
+and(w2,~a,~b,~c);
+or(f2,w1,w2);
 endmodule
 ```
 
