@@ -58,7 +58,8 @@ RegisterNumber: 212223240035
 
 
 **RTL realization**
-<img width="865" alt="boolean_funct circuit dia" src="https://github.com/Ganesh23013987/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473768/a94715a9-85db-4545-9df9-c842953377ff">
+![boolean_funct circuit dia](https://github.com/Ganesh23013987/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473768/3ad98602-6425-4243-9864-d4fa6f11d4cd)
+
 
 **TRUTH TABLE:**
 ![image](https://github.com/Ganesh23013987/BOOLEAN_FUNCTION_MINIMIZATION/assets/147473768/4c324af5-5752-441e-985c-e0d313854e06)
